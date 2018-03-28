@@ -1,0 +1,62 @@
+.home-page {
+  .sensors {
+    display flex;
+  }
+
+  .sensor {
+    display flex;
+    flex-direction column;
+    width 200px;
+    height 200px;
+    margin 0 10px 10px 0;
+    padding 20px 25px;
+    background #fff;
+
+    &.offline {
+      outline: 1px solid #f007;
+    }
+
+    .sensor__header {
+      display flex;
+      flex-direction row;
+      align-items center;
+      margin-bottom 25px
+      color: #cad0d6;
+    }
+
+    .sensor__icon {
+      margin-right 10px;
+      font-size 16px;
+      color: #dadee2;
+    }
+
+    .sensor__name {
+      font-size 13px;
+      overflow hidden;
+      text-overflow ellipsis;
+    }
+
+
+    .sensor__value {
+      display flex;
+      flex-grow 1;
+      align-items center;
+      font-size 18px;
+
+      .sensor__value__unit {
+        margin-left 5px;
+        font-size 14px;
+        color: #aaa;
+      }
+    }
+
+    .sensor__value__change {
+      color: #ccc;
+      margin-right 5px;
+    }
+
+    .sensor__graph {
+      height 50px;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+color = lighten(#fff, 10%)
+
+.sidebar {
+  background-color #53526a;
+
+  .logo {
+    height $headerHeight
+  }
+
+  .sidebar-elements {
+    list-style-type none
+    padding 0
+  }
+
+  .sidebar-element {
+    display flex
+    align-items center
+    justify-content center
+    height $sidebarWidth
+    font-size 22px
+
+    a {
+      color #414054;
+    }
+
+    &.selected,
+    &:hover {
+      background #4e4d62;
+
+      a {
+        color #8fc8ff;
+      }
+    }
+  }
+}
+

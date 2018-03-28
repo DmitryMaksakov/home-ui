@@ -1,0 +1,29 @@
+header {
+  display flex
+  justify-content space-between;
+  background #fff;
+  color: #393853;
+  padding-left 30px;
+  padding-right 10px;
+
+  .title {
+    line-height $headerHeight
+    font-size 16px
+    font-weight bold;
+  }
+
+  .menu-part {
+    display flex;
+
+    .menu-element {
+      display flex;
+      flex-direction column;
+      justify-content center;
+      margin-right 15px;
+
+      &:last-of-type {
+        margin-right  0;
+      }
+    }
+  }
+}

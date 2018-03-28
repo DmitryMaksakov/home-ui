@@ -1,0 +1,55 @@
+@font-face
+  font-family "Lato Light"
+  src url('../fonts/lato/Lato-Light.ttf') format("truetype")
+
+$headerHeight = 60px
+$sidebarWidth = 70px
+
+*
+  box-sizing border-box
+
+html
+  height 100%
+
+body
+  font-family "Lato Light"
+  font-size 12px
+  margin 0
+  color #333
+  height 100%
+
+#app,
+.app
+  height 100%
+
+.app
+  display grid
+  grid-template-areas "sidebar header" "sidebar main"
+  grid-template-rows $headerHeight 1fr
+  grid-template-columns $sidebarWidth 1fr
+
+header
+  grid-area header
+
+.sidebar
+  grid-area sidebar
+
+main
+  grid-area main
+
+
+@import "components/a";
+@import "components/button";
+@import "components/page";
+@import "components/input";
+@import "components/btn";
+@import "components/link";
+
+@import "../components/controls/header/header";
+@import "../components/controls/sidebar/sidebar";
+@import "../components/controls/localeSwitcher/localeSwitcher";
+@import "../components/controls/lang/lang";
+@import "../components/controls/user/user";
+
+@import "../components/pages/home/home";
+@import "../components/pages/login/login";

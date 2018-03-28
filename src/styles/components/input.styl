@@ -1,0 +1,29 @@
+input,
+textarea {
+  display: flex;
+  height: 32px;
+  padding: 5px 10px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.5s;
+  border: 1px solid #ccc;
+
+  &:required:invalid,
+  &:focus:invalid {
+    border: 1px solid #e00000;
+  }
+
+  &:hover {
+    border-color: #aaa;
+  }
+
+  &:focus {
+    border-color: #349aef;
+  }
+}
+
+textarea {
+  resize: none;
+  height: 96px;
+  overflow: auto;
+}
