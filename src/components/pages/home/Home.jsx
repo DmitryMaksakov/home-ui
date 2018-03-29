@@ -107,7 +107,7 @@ class Home extends React.Component {
       sensorDelta = DELTA_BY_SENSOR_TYPE[sensor.type],
       showUp = sensor.longTrendChange > sensorDelta,
       showDown = sensor.longTrendChange < 0 && Math.abs(sensor.longTrendChange) > sensorDelta,
-      online = sensor.is_online;
+      online = sensor.isOnline;
 
     return (
       <div className={classNames('sensor', {offline: !online})} key={sensor.id}>
